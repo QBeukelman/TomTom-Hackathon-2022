@@ -1,0 +1,80 @@
+# TomTom Global Student Hackathon 2022
+
+### About
+
+This application was created for the TomTom Global Hackathon.
+
+> **How can TomTom better connect navigation with the user’s digital life?**
+> We often need to (safely) use our phones on the go. In this challenge, you’ll find ways of connecting some of the most regularly used apps with a car’s navigation system.
+
+> **Assignment**
+> Using our SDKs and APIs, build a simple to use tap-and-go application that connects a daily used platform to a vehicle companion app or a navigation app like TomTom GO Navigation or TomTom AmiGO.
+<br />
+
+
+# Results
+
+### Day 1
+#### Mentor Check-in
+
+We were able to connect with our mentor but communication was fragmented from both sides.
+
+#### Brainstorming Session
+
+After analysing the core problem and available resources, our team shared possible solutions. From this, two ideas were not elemenated:
+
+- Personal Points of Interest(PPOI), "A PPOI is not a place, but what you do at that location".
+- An application programming interface for third parties to query and add PPOIs.
+
+The general idea is to create an application that will display PPOIs as `markers` above the TomTom map. We chose to use calander event locations as an example of how a third party would be able to use our proposed API structure to populate PPOIs.
+
+### Day 2
+
+Our team was able to configure and run the `TomTom Digital Cockpit` application using the `AutomotiveAndroidEmulator` in AndroidStudio, following the tutorial [tomtom-digital-cockpit/documentation](https://developer.tomtom.com/tomtom-digital-cockpit/documentation/getting-started/introduction).
+
+### Day 3
+
+After neumerous stebacks installation of the provided `IVI Service` for Android, our team decided to implement our example with Swift. We completed the following tasks:
+
+- Query the native iOS calander for a string contining calander event locations.
+- Access the GeoCoding API with a http GET reques, returning geo-coordinates.
+- Display these locations on the map.
+- Create a possible structure for a new API for third parties to add PPOIs.
+<br />
+
+
+# Code Overview
+
+### Setup
+
+#### Create a new Swift application
+
+- Create a new Swift application, add your TomTom `API-Key` to the `AppDelegate.swift` and `ViewController.swift`.
+- Use the above `ViewController.swift`.
+
+### Architecture
+
+Below is a diagram detailing the general application architecture.
+
+```mermaid
+  graph TD;
+      queryLocalCalendar-->calenderEventsArray;
+      calenderEventsArray-->forLoop;
+      forLoop-->calenderEventsArray;
+      forLoop-->http_get_convert_eventLocationString_to_lat/lon;
+      http_get_convert_eventLocationString_to_lat/lon-->placeMapMarker_perCalendar;
+      placeMapMarker_perCalendar-->forLoop;
+```
+<br />
+
+
+# Application ScreenShot
+
+> **Black** Event locations within the clendar named `TomTom`
+
+>  **Red** Event locations within the clendar named `TomTom Sport`
+
+![alt text](https://uploads-ssl.webflow.com/60255c87f21230edfb5fa38e/639131e6a236ba769b1f9e10_Thursday%2C%2008%20Dec%202022%2001%3A10%3A18%202.png)
+<br />
+
+
