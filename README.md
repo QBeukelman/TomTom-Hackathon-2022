@@ -54,6 +54,8 @@ After neumerous stebacks installation of the provided `IVI Service` for Android,
 
 An application that will display PPOIs as `markers` above the TomTom map; wherein, calander event locations are presented as an example of how a third party would be able to use our proposed API structure to populate PPOIs.
 
+### Example Situation
+
 > **Calendar app** The user starts the car and a calendar app shows upcoming events on the map as well as recommends a destination.
 
 > **Restaurant app** The car needs to recharge and the app suggests charging at a specific restaurant. Alternatively a friends app could suggest charging  at the same location as a college.
