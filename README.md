@@ -71,6 +71,13 @@ An application that will display PPOIs as `markers` above the TomTom map; wherei
 - Create a new Swift application, add your TomTom `API-Key` to the `AppDelegate.swift` and `ViewController.swift`.
 - Use the above `ViewController.swift`.
 
+### Used Services
+
+- `iOS Swift EKCalendar`service.
+- `TomTomSDKMapDisplay SDK`.
+- `TomTomSDKMapMarker SDK`.
+- `TomTom GeoCoding API`.
+
 ### Architecture
 
 Below is a diagram detailing the general application architecture.
@@ -107,6 +114,11 @@ Below is a diagram detailing the general application architecture.
   /search/{versionNumber}/dppoiSearch/{query}.{ext}?....
 ```
 
+#### TomTom PPOI API Diagram
+
+![alt text](https://uploads-ssl.webflow.com/60255c87f21230edfb5fa38e/6391f3cb4aef5c5e783a71f3_Team%20connect%20one%20pager%2C%20APPENDIX%201.png)
+
+
 #### Input parameters (in addition to POI parameters)
 
 ```https
@@ -122,8 +134,6 @@ Below is a diagram detailing the general application architecture.
     - Dynamic/Static
     - Potential added time to eta
 ```
-
-
 <br />
 
 
@@ -132,7 +142,4 @@ Below is a diagram detailing the general application architecture.
 - If developing this API, determine which desired apps to integrate and contract launching developers. We suggest a calendar app as this can assist in generation of the ‘spare time’ metric.
 - We suggest personal profiles to personalise presented map data and customise search autocomplete.
 - Users should set sharing permissions etc.
-
 <br />
-
-
