@@ -107,7 +107,7 @@ Below is a diagram detailing the general application architecture.
 
 #### Input perarmeters (in addition to POI parameters)
 
-```json
+```https
   ● PPOI category to search
   ● List of additional ppoi’s
     ● 3rd-party ID
