@@ -1,14 +1,18 @@
-//
-//  ViewController.swift
-//  TomTom
-//
-//  Created by Quentin Beukelman on 06/12/2022.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        ::::::::            */
+/*   ViewController.swift                               :+:    :+:            */
+/*                                                     +:+                    */
+/*   By: quentinbeukelman <quentinbeukelman@stud      +#+                     */
+/*                                                   +#+                      */
+/*   Created: 2022/12/05 10:23:30 by quentinbeuk   #+#    #+#                 */
+/*   Updated: 2022/12/08 15:50:04 by quentinbeuk   ########   odam.nl         */
+/*                                                                            */
+/* ************************************************************************** */
 
 import Foundation
 import UIKit
 import TomTomSDKMapDisplay
-
 import EventKit
 import EventKitUI
 
