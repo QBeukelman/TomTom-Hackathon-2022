@@ -2,7 +2,7 @@
 
 ### About
 
-This application was created for the TomTom Global Hackathon.
+This application was created for the TomTom Global Hackathon, by Quentin Beukelman. Our team with name "Connected", consisted of Ferry Ras, Carlo Wesseling and Carien Caljouw.
 
 > **How can TomTom better connect navigation with the user’s digital life?**
 > We often need to (safely) use our phones on the go. In this challenge, you’ll find ways of connecting some of the most regularly used apps with a car’s navigation system.
