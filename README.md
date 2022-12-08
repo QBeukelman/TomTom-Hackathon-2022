@@ -50,6 +50,10 @@ After neumerous stebacks installation of the provided `IVI Service` for Android,
 
 # Use Case
 
+### What does the app do?
+
+An application that will display PPOIs as `markers` above the TomTom map; wherein, calander event locations are presented as an example of how a third party would be able to use our proposed API structure to populate PPOIs.
+
 > **Calendar app** The user starts the car and a calendar app shows upcoming events on the map as well as recommends a destination.
 
 > **Restaurant app** The car needs to recharge and the app suggests charging at a specific restaurant. Alternatively a friends app could suggest charging  at the same location as a college.
@@ -91,11 +95,39 @@ Below is a diagram detailing the general application architecture.
 <br />
 
 
+# Supposed API Suggestion
+
+### API Request
+
+#### https format example
+
+```https
+  /search/{versionNumber}/dppoiSearch/{query}.{ext}?....
+```
+
+#### Input perarmeters (in addition to POI parameters)
+
+```json
+  ● dppoi category to search
+  ● list of additional ppoi’s
+    ● 3rd-party ID
+    ● category
+      ● Physical location
+      ● Person location
+        ● friend
+        ● colleague
+      ● Area
+    ● Dynamic/Static
+    ● potential added time to eta
+```
+
+
+<br />
+
+
 # Remarks and Recomendations
 
-- Determine required apps to integrate and contract a launching developer. We suggest a calendar app as this create the option - to auto generate ‘spare time’
-- Personal profiles to personalise map data and search autocomplete
-- Users should set sharing permissions etc.
+
 <br />
 
 
