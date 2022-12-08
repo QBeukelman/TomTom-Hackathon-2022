@@ -108,17 +108,17 @@ Below is a diagram detailing the general application architecture.
 #### Input perarmeters (in addition to POI parameters)
 
 ```https
-  ● PPOI category to search
-  ● List of additional ppoi’s
-    ● 3rd-party ID
-    ● Category
-      ● Physical location
-      ● Person location
-        ● Friend
-        ● Colleague
-      ● Area
-    ● Dynamic/Static
-    ● Potential added time to eta
+  - PPOI category to search
+  - List of additional ppoi’s
+      - 3rd-party ID
+      - Category
+         - Physical location
+          - Person location
+             - Friend
+             - Colleague
+         - Area
+    - Dynamic/Static
+    - Potential added time to eta
 ```
 
 
