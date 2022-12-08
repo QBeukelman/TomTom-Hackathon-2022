@@ -23,13 +23,13 @@ We were able to connect with our mentor but communication was fragmented from bo
 
 After analysing the core problem and available resources, our team shared possible solutions. We idnetified the follwoing core problems.
 
-- TomTom wishes to add value to the Automotive CockPit, which is not available on a mobile phone. Making the CockPit more attractive for drivers than their mobile phones.
-- With the TomTom map, POI's are too neumoerous, making them irrelevant. 
+> - TomTom wishes to add value to the Automotive CockPit, which is not available on a mobile phone. Making the CockPit more attractive for drivers than their mobile phones.
+> - With the TomTom map, POI's are too neumoerous, making them irrelevant. 
 
 From this, two ideas were not eliminated:
 
-- Personal Points of Interest(PPOI), "A PPOI is not a place, but what you do at that location".
-- An application programming interface for third parties to query and add PPOIs.
+> - Personal Points of Interest(PPOI), "A PPOI is not a place, but what you do at that location".
+> - An application programming interface for third parties to query and add PPOIs.
 
 The general idea is to create an application that will display PPOIs as `markers` above the TomTom map. We chose to use calander event locations as an example of how a third party would be able to use our proposed API structure to populate PPOIs.
 
@@ -142,5 +142,5 @@ Below is a diagram detailing the general application architecture.
 - If developing this API, determine which desired apps to integrate and contract launching developers. We suggest a calendar app as this can assist in generation of the ‘spare time’ metric.
 - We suggest personal profiles to personalise presented map data and customise search autocomplete.
 - Users should set sharing permissions etc.
-- The TomTom documentation was very good, but was missing some relevant system information; namley, that the CockPit does not support Apple Silicon. Also, build times were very long with the TomTom Automotive Emulator.
+- The TomTom documentation was very good, but was missing some relevant system information; namely, that the CockPit does not support Apple Silicon. Also, build times were very long with the TomTom Automotive Emulator.
 <br />
