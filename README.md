@@ -108,17 +108,17 @@ Below is a diagram detailing the general application architecture.
 #### Input perarmeters (in addition to POI parameters)
 
 ```json
-  ● dppoi category to search
-  ● list of additional ppoi’s
+  ● PPOI category to search
+  ● List of additional ppoi’s
     ● 3rd-party ID
-    ● category
+    ● Category
       ● Physical location
       ● Person location
-        ● friend
-        ● colleague
+        ● Friend
+        ● Colleague
       ● Area
     ● Dynamic/Static
-    ● potential added time to eta
+    ● Potential added time to eta
 ```
 
 
@@ -127,6 +127,9 @@ Below is a diagram detailing the general application architecture.
 
 # Remarks and Recomendations
 
+- If developing this API, determine which desired apps to integrate and contract launching developers. We suggest a calendar app as this can assist in generation of the ‘spare time’ metric.
+- We suggest personal profiles to personalise presented map data and customise search autocomplete.
+- Users should set sharing permissions etc.
 
 <br />
 
