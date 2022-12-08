@@ -17,11 +17,16 @@ This application was created for the TomTom Global Hackathon.
 ### Day 1
 #### Mentor Check-in
 
-We were able to connect with our mentor but communication was fragmented from both sides.
+We were able to connect with our mentor but communication was fragmented from both sides. Later, on day 3, we were able to discuss our project in more detail with our mentor. He was not able to provide technical support, but was able to elaborate on TomTom's current situation and available technologies. Wherein, the mentor explaind the utility of map profiles, whcih fed into our PPOI idea.
 
 #### Brainstorming Session
 
-After analysing the core problem and available resources, our team shared possible solutions. From this, two ideas were not elemenated:
+After analysing the core problem and available resources, our team shared possible solutions. We idnetified the follwoing core problems.
+
+- TomTom wishes to add value to the Automotive CockPit, which is not available on a mobile phone. Making the CockPit more attractive for drivers than their mobile phones.
+- With the TomTom map, POI's are too neumoerous, making them irrelevant. 
+
+From this, two ideas were not eliminated:
 
 - Personal Points of Interest(PPOI), "A PPOI is not a place, but what you do at that location".
 - An application programming interface for third parties to query and add PPOIs.
@@ -30,7 +35,7 @@ The general idea is to create an application that will display PPOIs as `markers
 
 ### Day 2
 
-Our team was able to configure and run the `TomTom Digital Cockpit` application using the `AutomotiveAndroidEmulator` in AndroidStudio, following the tutorial [tomtom-digital-cockpit/documentation](https://developer.tomtom.com/tomtom-digital-cockpit/documentation/getting-started/introduction).
+Our team was able to configure and run the `TomTom Digital Cockpit` application using the `AutomotiveAndroidEmulator` in AndroidStudio, following the tutorial [tomtom-digital-cockpit/documentation](https://developer.tomtom.com/tomtom-digital-cockpit/documentation/getting-started/introduction). Often the emulator in AndroidStudio was slow to load, making development time consuming.
 
 ### Day 3
 
@@ -40,6 +45,14 @@ After neumerous stebacks installation of the provided `IVI Service` for Android,
 - Access the GeoCoding API with a http GET reques, returning geo-coordinates.
 - Display these locations on the map.
 - Create a possible structure for a new API for third parties to add PPOIs.
+<br />
+
+
+# Use Case
+
+> **Calendar app** The user starts the car and a calendar app shows upcoming events on the map as well as recommends a destination.
+
+> **Restaurant app** The car needs to recharge and the app suggests charging at a specific restaurant. Alternatively a friends app could suggest charging  at the same location as a college.
 <br />
 
 
@@ -75,6 +88,14 @@ Below is a diagram detailing the general application architecture.
 >  **Red** Event locations within the clendar named `TomTom Sport`
 
 ![alt text](https://uploads-ssl.webflow.com/60255c87f21230edfb5fa38e/639131e6a236ba769b1f9e10_Thursday%2C%2008%20Dec%202022%2001%3A10%3A18%202.png)
+<br />
+
+
+# Remarks and Recomendations
+
+- Determine required apps to integrate and contract a launching developer. We suggest a calendar app as this create the option - to auto generate ‘spare time’
+- Personal profiles to personalise map data and search autocomplete
+- Users should set sharing permissions etc.
 <br />
 
 
