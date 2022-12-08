@@ -107,7 +107,7 @@ Below is a diagram detailing the general application architecture.
   /search/{versionNumber}/dppoiSearch/{query}.{ext}?....
 ```
 
-#### Input perarmeters (in addition to POI parameters)
+#### Input parameters (in addition to POI parameters)
 
 ```https
   - PPOI category to search
