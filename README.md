@@ -142,4 +142,5 @@ Below is a diagram detailing the general application architecture.
 - If developing this API, determine which desired apps to integrate and contract launching developers. We suggest a calendar app as this can assist in generation of the ‘spare time’ metric.
 - We suggest personal profiles to personalise presented map data and customise search autocomplete.
 - Users should set sharing permissions etc.
+- The TomTom documentation was very good, but was missing some relevant system information; namley, that the CockPit does not support Apple Silicon. Also, build times were very long with the TomTom Automotive Emulator.
 <br />
