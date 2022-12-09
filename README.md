@@ -17,21 +17,21 @@ This application was created for the TomTom Global Hackathon, by Quentin Beukelm
 ### Day 1
 #### Mentor Check-in
 
-We were able to connect with our mentor but communication was fragmented from both sides. Later, on day 3, we were able to discuss our project in more detail with our mentor. He was not able to provide technical support, but was able to elaborate on TomTom's current situation and available technologies. Wherein, the mentor explaind the utility of map profiles, whcih fed into our PPOI idea.
+We were able to connect with our mentor but communication was fragmented from both sides. Later, on day 3, we were able to discuss our project in more detail with our mentor. He was not able to provide technical support, but was able to elaborate on TomTom's current situation and available technologies. Wherein, the mentor explaind the utility of map profiles, which fed into our PPOI idea.
 
 #### Brainstorming Session
 
-After analysing the core problem and available resources, our team shared possible solutions. We idnetified the follwoing core problems.
+After analysing the core problem and available resources, our team shared possible solutions. We indentified the following core problems.
 
 > - TomTom wishes to add value to the Automotive CockPit, which is not available on a mobile phone. Making the CockPit more attractive for drivers than their mobile phones.
-> - With the TomTom map, POI's are too neumoerous, making them irrelevant. 
+> - With the TomTom map, POI's are too numerous, making them irrelevant. 
 
 From this, two ideas were not eliminated:
 
-> - Personal Points of Interest(PPOI), "A PPOI is not a place, but what you do at that location".
+> - Dynamic Personal Points of Interest(DPPOI), "A PPOI is not a place, but what you do at that location".
 > - An application programming interface for third parties to query and add PPOIs.
 
-The general idea is to create an application that will display PPOIs as `markers` above the TomTom map. We chose to use calander event locations as an example of how a third party would be able to use our proposed API structure to populate PPOIs.
+The general idea is to create an application that will display PPOIs as `markers` above the TomTom map. We chose to use calender event locations as an example of how a third party would be able to use our proposed API structure to populate PPOIs.
 
 ### Day 2
 
@@ -41,10 +41,10 @@ Our team was able to configure and run the `TomTom Digital Cockpit` application 
 
 After neumerous stebacks installation of the provided `IVI Service` for Android, our team decided to implement our example with Swift. We completed the following tasks:
 
-- Query the native iOS calander for a string contining calander event locations.
-- Access the GeoCoding API with a http GET reques, returning geo-coordinates.
+- Query the native iOS calender for a string containing calender event locations.
+- Access the GeoCoding API with a http GET request, returning geo-coordinates.
 - Display these locations on the map.
-- Create a possible structure for a new API for third parties to add PPOIs.
+- Create a possible dynamic structure for a new API for third parties to add PPOIs.
 <br />
 
 
@@ -52,7 +52,7 @@ After neumerous stebacks installation of the provided `IVI Service` for Android,
 
 ### What does the app do?
 
-An application that will display PPOIs as `markers` above the TomTom map; wherein, calander event locations are presented as an example of how a third party would be able to use our proposed API structure to populate PPOIs.
+An application that will display PPOIs as `markers` above the TomTom map; wherein, calender event locations are presented as an example of how a third party would be able to use our proposed API structure to populate PPOIs.
 
 ### Example Situation
 
@@ -96,9 +96,9 @@ Below is a diagram detailing the general application architecture.
 
 # Application ScreenShot
 
-> **Black** Event locations within the clendar named `TomTom`
+> **Black** Event locations within the calendar named `TomTom`
 
->  **Red** Event locations within the clendar named `TomTom Sport`
+>  **Red** Event locations within the calendar named `TomTom Sport`
 
 ![alt text](https://uploads-ssl.webflow.com/60255c87f21230edfb5fa38e/639131e6a236ba769b1f9e10_Thursday%2C%2008%20Dec%202022%2001%3A10%3A18%202.png)
 <br />
@@ -114,7 +114,7 @@ Below is a diagram detailing the general application architecture.
   /search/{versionNumber}/dppoiSearch/{query}.{ext}?....
 ```
 
-#### TomTom PPOI API Diagram
+#### TomTom DPPOI API Diagram
 
 ![alt text](https://uploads-ssl.webflow.com/60255c87f21230edfb5fa38e/6391f3cb4aef5c5e783a71f3_Team%20connect%20one%20pager%2C%20APPENDIX%201.png)
 
