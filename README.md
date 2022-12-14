@@ -17,13 +17,13 @@ This application was created for the TomTom Global Hackathon, by Quentin Beukelm
 ### Day 1
 #### Mentor Check-in
 
-We were able to connect with our mentor but communication was fragmented from both sides. Later, on day 3, we were able to discuss our project in more detail with our mentor. He was not able to provide technical support, but was able to elaborate on TomTom's current situation and available technologies. Wherein, the mentor explaind the utility of map profiles, whcih fed into our PPOI idea.
+We were able to connect with our mentor but communication was fragmented from both sides. Later, on day 3, we were able to discuss our project in more detail with our mentor. He was not able to provide technical support, but was able to elaborate on TomTom's current situation and available technologies. Wherein, the mentor explaind the utility of map profiles, which fed into our PPOI idea.
 
 #### Brainstorming Session
 
-After analysing the core problem and available resources, our team shared possible solutions. We idnetified the follwoing core problems.
+After analysing the core problem and available resources, our team shared possible solutions. We idnetified the follwoing core problems:
 
-> - TomTom wishes to add value to the Automotive CockPit, which is not available on a mobile phone. Making the CockPit more attractive for drivers than their mobile phones.
+> - TomTom wishes to add value to the Automotive CockPit, value which is not available on a mobile phone. Making the CockPit more attractive for drivers than their mobile phones.
 > - With the TomTom map, POI's are too neumoerous, making them irrelevant. 
 
 From this, two ideas were not eliminated:
@@ -41,7 +41,7 @@ Our team was able to configure and run the `TomTom Digital Cockpit` application 
 
 After neumerous stebacks installation of the provided `IVI Service` for Android, our team decided to implement our example with Swift. We completed the following tasks:
 
-- Query the native iOS calander for a string contining calander event locations.
+- Query the native iOS calander for a string containing calander event locations.
 - Access the GeoCoding API with a http GET reques, returning geo-coordinates.
 - Display these locations on the map.
 - Create a possible structure for a new API for third parties to add PPOIs.
@@ -58,7 +58,7 @@ An application that will display PPOIs as `markers` above the TomTom map; wherei
 
 > **Calendar app** The user starts the car and a calendar app shows upcoming events on the map as well as recommends a destination.
 
-> **Restaurant app** The car needs to recharge and the app suggests charging at a specific restaurant. Alternatively a friends app could suggest charging  at the same location as a college.
+> **Restaurant app** The car needs to recharge and the app suggests charging at a specific restaurant. Alternatively, a friends app could suggest charging  at the same location as a college.
 <br />
 
 
@@ -127,7 +127,7 @@ Below is a diagram detailing the general application architecture.
       - 3rd-party ID
       - Category
          - Physical location
-          - Person location
+         - Person location
              - Friend
              - Colleague
          - Area
@@ -139,8 +139,8 @@ Below is a diagram detailing the general application architecture.
 
 # Remarks and Recomendations
 
-- If developing this API, determine which desired apps to integrate and contract launching developers. We suggest a calendar app as this can assist in generation of the ‘spare time’ metric.
+- In developing this API, determine which desired apps to integrate and contract launching developers. We suggest a calendar app as this can assist in generation of the ‘spare time’ metric.
 - We suggest personal profiles to personalise presented map data and customise search autocomplete.
-- Users should set sharing permissions etc.
-- The TomTom documentation was very good, but was missing some relevant system information; namely, that the CockPit does not support Apple Silicon. Also, build times were very long with the TomTom Automotive Emulator.
+- Users should set sharing permissions.
+- The TomTom developer documentation was very good, but was missing some relevant system information; namely, that the CockPit does not support Apple Silicon. Also, build times were very long with the TomTom Automotive Emulator.
 <br />
