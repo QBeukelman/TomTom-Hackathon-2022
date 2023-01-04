@@ -100,11 +100,12 @@ Below is a diagram detailing the general application architecture.
 
 >  **Red** Event locations within the clendar named `TomTom Sport`
 
-![alt text](https://uploads-ssl.webflow.com/60255c87f21230edfb5fa38e/639131e6a236ba769b1f9e10_Thursday%2C%2008%20Dec%202022%2001%3A10%3A18%202.png)
+![alt text](https://uploads-ssl.webflow.com/60255c87f21230edfb5fa38e/63b56aeb7e2c70bfad00ddb8_TomTom.png)
+<br />
 <br />
 
 
-# Supposed API Suggestion
+# Recommended API Structure
 
 ### API Request
 
